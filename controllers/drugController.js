@@ -1,4 +1,5 @@
 const Drug = require("../models/Drug");
+const { StatusCodes } = require("http-status-codes");
 
 const getAllDrugs = async (req, res) => {
   try {
