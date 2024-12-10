@@ -15,8 +15,8 @@ server.use(express.json());
 // server.use(express.static("public"));
 
 // Invoking API Routes
-server.use("/healthspan/api/users", userRouter);
-server.use("/healthspan/api/drugs", drugRouter);
+server.use("/api/users", userRouter);
+server.use("/api/drugs", drugRouter);
 
 // Dynamic Port logic for production and development use
 const port = process.env.PORT || 3000;
